@@ -1,0 +1,60 @@
+
+
+.navbar{
+    background: linear-gradient(to bottom, #153121);
+    
+
+    color: white;
+}
+
+/* logo name */
+.navbar-brand {
+  font-family: 'Cinzel Decorative', serif; 
+  font-size: 30px;                          
+  font-weight: 700;
+  color: #D4AF37 !important;                
+  letter-spacing: 2px;                     
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+
+.navbar-brand:hover {
+  color: #ff9d00 !important;                
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+
+
+.navbar .nav-link {
+  color: #F5F5DC !important;   
+  font-weight: 500;
+}
+
+/* slidebar */
+.carousel-item img{
+    height: 500px;
+    width: 100%;
+}
+
+/* Slider Title */
+
+
+.carousel-item h2{
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #D4AF37;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Slider Subtitle */
+.carousel-item p {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8); 
+}
+
+
