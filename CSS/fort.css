@@ -1,0 +1,118 @@
+.navbar {
+  background: linear-gradient(to bottom, #153121);
+
+  color: white;
+}
+
+/* logo name */
+.navbar-brand {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #d4af37 !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand:hover {
+  color: #ff9d00 !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.navbar .nav-link {
+  color: #f5f5dc !important;
+  font-weight: 500;
+}
+
+/* slidebar */
+.carousel-item img {
+  height: 500px;
+  width: 100%;
+}
+
+/* Slider Title */
+
+.carousel-item h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #d4af37;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Slider Subtitle */
+.carousel-item p {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.button {
+    display: flex;                  
+    flex-wrap: wrap;                
+    justify-content: center;        
+    padding: 20px;                
+}
+
+/* marque */
+.marque{
+    padding: 2px;
+    margin: 8px;
+    background-color:yellowgreen;
+    
+}
+
+
+.btn {
+    display: inline-block;          
+    padding: 10px 20px;             
+    background-color: orange;      
+    color: white;                   
+    text-decoration: none;          
+    border-radius: 8px;             
+    font-size: 16px;                
+    font-weight: 500;               
+    transition: all 0.3s ease; 
+    margin: 6px;     
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: green;      
+    transform: scale(1.05); 
+    color: black;        
+}
+
+
+@media (max-width: 768px) {
+    .buttons{
+        flex-direction: column;     
+        align-items: center;
+    }
+
+    .btn {
+        width: 80%;                 
+        text-align: center;
+    }
+}
+
+h3{
+  color: brown;
+}
+.raigad{
+  /* border: 2px solid black; */
+}
+.raigadimg:hover{
+  border: 2px solid black;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px orange;
+  border-radius: 40px;
+  /* transform: scale(0.5); */
+}
+.raigadimg{
+  /* transition: transform 0.5s ease-in-out; */
+}
