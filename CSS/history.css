@@ -84,10 +84,13 @@ h2{
     border: 2px solid red;
     box-sizing: border-box;
     box-shadow: 4px 4px 4px olivedrab;
-
-    
 }
-
+.bi-flag{
+  color: orange;
+}
+.social{
+  font-size: 60px;
+}
 
 
 
