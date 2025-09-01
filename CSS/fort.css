@@ -116,3 +116,9 @@ h3{
 .raigadimg{
   /* transition: transform 0.5s ease-in-out; */
 }
+
+button {
+  border: none;
+  outline: none; 
+  background: none;
+}
