@@ -1,0 +1,59 @@
+
+.navbar {
+  background: linear-gradient(to bottom, #153121);
+
+  color: white;
+}
+
+/* logo name */
+.navbar-brand {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #d4af37 !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand:hover {
+  color: #ff9d00 !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.navbar .nav-link {
+  color: #f5f5dc !important;
+  font-weight: 500;
+}
+.box_model{
+  border: 6px solid black;
+  padding: 10px 5px 15px 20px;
+  margin: 10px 20px 10px 20px;
+  background-color: aqua;
+}
+.box_model1{
+  border: 6px solid black;
+  padding: 10px 5px 15px 20px;
+  margin:10px 20px 10px 20px;
+  background-color: #ff9d00;
+}
+.box_model2{
+  border: 6px solid black;
+  padding: 10px 5px 15px 20px;
+  margin: 10px 20px 10px 20px;
+  background-color: crimson;
+
+}
+
+h1{
+  color: red;
+}
+h2{
+  color: #ff9d00;
+}
+  
+img:hover{
+  border: 5px solid deeppink;
+  box-shadow:goldenrod;
+
+}
