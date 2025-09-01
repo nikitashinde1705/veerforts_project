@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   
+  
 }
 .navbar{
     background: linear-gradient(to bottom , rgb(27, 112, 27), #153121) ;
@@ -122,32 +123,45 @@
 
 /* About section */
 
-.home_about{
-  background: linear-gradient(to right, #e6d5b8, #fff);
-}
+
 .home_about .row{
- 
   display: flex;
   align-items: stretch;
+  margin: 30px;
+}
+.home_about_container{
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+/*  background-color: #E6D5B8;*/
+  border-radius: 30px;
 }
 
 .left_col, .right_col{
   display: flex;
   flex-direction: column;
   padding: 10px;
-  margin-top: 5px;
+  
 }
 
 .left_col{
-  margin-top: 5px;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .left_col P,h2,a{
-  margin: 15px;
   text-align: justify;
- 
-  line-height: 20pt;  
+   color: #3E2723;
+  margin-top: 15px;
+  line-height: 20pt; 
+  
+
+}
+.left_col h2{
+   
+    font-weight: 600;
+    font-size: 35px;
 }
 
 
@@ -167,10 +181,151 @@
 
 .home_about_img img{
    object-fit: cover;
-    margin-bottom: 10px;
-    
+}
+
+/* fort section */
+
+.home_fort_container{
+  height: 700px;
+  width: 100%;
+  background: #e8f5e9;
+ 
+ 
+}
+
+.home_fort_container img{
+  height: 40vh;
+}
+.home_fort_h2{
+  margin-top: 30px;
+}
+
+.home_fort_h2,.home_fort_p{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home_fort_card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home_fort_card h5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
+.home_fort_card p{
+  text-align: justify;
+  padding: 5px;
+}
 
- 
+
+
+.home_fort_card .btn {
+  display: inline-block;    /* keeps natural width */
+  background-color: green;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+/* Smooth transition for all hover effects */
+.home_fort_container .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Card Lift + Shadow */
+.home_fort_container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Zoom on Hover */
+.home_fort_container .card img {
+  transition: transform 0.5s ease;
+}
+
+.home_fort_container .card:hover img {
+  transform: scale(1.1);
+}
+
+/* Button Hover */
+.home_fort_container .btn {
+  transition: background-color 0.3s ease;
+}
+
+.home_fort_container .btn:hover {
+  background-color: #2e7d32; /* Darker green on hover */
+}
+
+/* Gallary section designing*/
+
+/* Section Background */
+.fort-gallery {
+  background: #f8f5f0;
+}
+
+/* Titles */
+.gallery-title {
+  font-family: 'Cinzel Decorative', serif;
+  color: #5a4634;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.gallery-subtitle {
+  font-family: 'Cinzel', serif;
+  color: #7a6a58;
+  font-size: 16px;
+}
+
+/* Gallery Items */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #d4af37;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Caption Overlay */
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+}
+
+/* Hover Effect on Container */
+.gallery-item:hover {
+  border-color: #b8860b;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Lightbox Image */
+.modal-content img {
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
