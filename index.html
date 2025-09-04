@@ -10,14 +10,17 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
     </head>
     <body>
 
         <!-- Navbar start -->
 
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                <div class="container-fluid ">
                     <a class="navbar-brand" href="#">
                         <img src="Images/logo.png" alt width="40" height="34"
                             class="d-inline-block align-text-top">
@@ -30,7 +33,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
                                     href="index.html">Home</a>
@@ -176,124 +179,349 @@
                 </div>
             </div>
         </section>
+        <!-- About section  end-->
 
         <!-- Fort section -->
 
-        <section class="home_fort">
-            <div class="container-fluid home_fort_container">
-                <div class="row ">
+        <section class="home_fort py-5">
+            <div class="container">
+                <div class="text-center mb-5">
                     <h2 class="home_fort_h2">Famous Forts of Maharashtra</h2>
-                    <p class="home_fort_p">Discover the glory of the Maratha Empire through these
-                        iconic forts.</p>
-                    <div class="col-md-3">
-                        <div class="card home_fort">
+                    <p class="home_fort_p"><em>Discover the glory of the Maratha
+                        Empire through these iconic forts.</em></p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card fort-card h-100">
                             <img src="Images/idex_image/home_fort2.jpg"
-                                class=" img-fluid card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Raigadh Fort</h5>
-                                <p class="card-text">Once the capital of Maratha
-                                    Empire, Raigad showcases Shivaji Maharaj’s
-                                    coronation site, majestic gates, and
-                                    strategic architecture.</p>
-                                <a href="#" class="btn btn-primary">Read More</a>
+                                class="card-img-top" alt="Raigad Fort">
+                            <div
+                                class="card-body text-center d-flex flex-column">
+                                <h5 class="card-title">Raigad Fort</h5>
+                                <p class="card-text  flex-grow-1">Once the
+                                    capital of the
+                                    Maratha Empire, Raigad showcases Shivaji
+                                    Maharaj’s coronation site, majestic gates,
+                                    and strategic architecture.</p>
+                                <a href="forts.html"
+                                    class="btn btn-fort mt-auto">Read More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card fort-card h-100">
                             <img src="Images/idex_image/home_fort3.jpg"
-                                class="img-fluid card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Korigadh Fort</h5>
-                                <p class="card-text">Located near Lonavala,
+                                class="card-img-top" alt="Korigad Fort">
+                            <div
+                                class="card-body text-center d-flex flex-column">
+                                <h5 class="card-title">Korigad Fort</h5>
+                                <p class="card-text  flex-grow-1">Located near
+                                    Lonavala,
                                     Korigad offers scenic views, ancient
                                     temples, and well-preserved fortifications
                                     for history lovers.</p>
-                                <a href="#" class="btn btn-primary">Read More</a>
+                                <a href="forts.html"
+                                    class="btn btn-fort mt-auto">Read More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card fort-card h-100">
                             <img src="Images/idex_image/suvarndurg_1.jpg"
-                                class="img-fluid card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Suvarnduragh Fort</h5>
-                                <p class="card-text">A prominent sea fort built
+                                class="card-img-top" alt="Suvarndurg Fort">
+                            <div
+                                class="card-body text-center d-flex flex-column">
+                                <h5 class="card-title">Suvarndurg Fort</h5>
+                                <p class="card-text  flex-grow-1">A prominent
+                                    sea fort built
                                     by Shivaji Maharaj, Suvarndurg played a key
                                     role in Maratha naval defense and trade.</p>
-                                <a href="#" class="btn btn-primary">Read More</a>
+                                <a href="forts.html"
+                                    class="btn btn-fort mt-auto">Read More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card fort-card h-100">
                             <img src="Images/idex_image/home_fort4.jpg"
-                                class="v card-img-top" alt="...">
-                            <div class="card-body">
+                                class="card-img-top" alt="Torana Fort">
+                            <div
+                                class="card-body text-center d-flex flex-column">
                                 <h5 class="card-title">Torana Fort</h5>
-                                <p class="card-text">Located near Lonavala,
-                                    Korigad offers scenic views, ancient
-                                    temples, and well-preserved fortifications
-                                    for history lovers.</p>
-                                <a href="#" class="btn btn-primary">Read More</a>
+                                <p class="card-text  flex-grow-1">Known as the
+                                    "Prachandagad," Torna was the first fort
+                                    captured by Shivaji Maharaj and holds
+                                    immense historical importance.</p>
+                                <a href="forts.html"
+                                    class="btn btn-fort mt-auto">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fort section end -->
+
+        <!-- History section start -->
+        <section class="history-section py-5">
+            <div class="container">
+                <h2 class="history-title text-center mb-3">Glorious History of
+                    Maharashtra</h2>
+                <p class="history-subtitle text-center mb-5"><em>Moments that shaped
+                    the legacy of Maratha forts</em></p>
+
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="history-card fade-in-up">
+                            <div class="icon-circle">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h4>Shivaji Maharaj’s Coronation</h4>
+                            <p>In 1674, Raigad Fort became the capital of the
+                                Maratha Empire, where Chhatrapati Shivaji
+                                Maharaj was crowned, marking the rise of
+                                Swarajya.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="history-card fade-in-up delay-1">
+                            <div class="icon-circle">
+                                <i class="bi bi-shield-shaded"></i>
+                            </div>
+                            <h4>Maratha Naval Power</h4>
+                            <p>Shivaji Maharaj built strong sea forts like
+                                Suvarndurg, Sindhudurg, and Vijaydurg,
+                                establishing one of India’s first naval
+                                defenses.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="history-card fade-in-up delay-2">
+                            <div class="icon-circle">
+                                <i class="bi bi-flag"></i>
+                            </div>
+                            <h4>Legacy of Forts</h4>
+                            <p>From Rajgad to Pratapgad, forts stood as symbols
+                                of valor, strategy, and resistance against
+                                Mughals and British forces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- history section end -->
+
+        <!-- event section start -->
+
+        <section class="events-section py-5">
+            <div class="container">
+                <h2 class="events-title text-center mb-3">Upcoming Events</h2>
+                <p class="events-subtitle text-center mb-5"><em>Celebrate the
+                    culture, history, and valor of Maharashtra</em></p>
+
+                <div class="row g-4">
+                    <!-- Event 1 -->
+                    <div class="col-md-4">
+                        <div class="event-card fade-in-up">
+                            <img src="Images/idex_image/raigadh_event.jpg"
+                                class="img-fluid event-img"
+                                alt="Raigad Festival">
+                            <div class="event-body">
+                                <h4>Raigad Festival</h4>
+                                <p>Annual celebration at Raigad Fort honoring
+                                    Shivaji Maharaj’s coronation with cultural
+                                    programs, exhibitions, and parades.</p>
+                                <span class="event-date">15th June 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 2 -->
+                    <div class="col-md-4">
+                        <div class="event-card fade-in-up delay-1">
+                            <img src="Images/idex_image/fort_trek_event.jpg"
+                                class="img-fluid event-img" alt="Fort Trek">
+                            <div class="event-body">
+                                <h4>Historical Fort Trek</h4>
+                                <p>A thrilling trek to Torna and Rajgad, guided
+                                    by historians sharing the rich tales of
+                                    Maratha bravery.</p>
+                                <span class="event-date">2nd July 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 3 -->
+                    <div class="col-md-4">
+                        <div class="event-card fade-in-up delay-2">
+                            <img src="Images/idex_image/navy_enent.avif"
+                                class="img-fluid event-img" alt="Naval Day">
+                            <div class="event-body">
+                                <h4>Maratha Naval Day</h4>
+                                <p>Celebration at Sindhudurg Fort highlighting
+                                    the naval strength of Shivaji Maharaj with
+                                    reenactments and exhibitions.</p>
+                                <span class="event-date">20th August 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- event section end -->
+
+        <!-- gallary section start -->
+        <section id="gallery" class="gallery-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title text-center">Fort Gallery</h2>
+                    <p class="section-subtitle">A Glimpse Into the Glorious Past
+                        of Maharashtra</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="Images/idex_image/gallary_1.jpg"
+                                alt="Raigad Fort">
+                            <div class="overlay">
+                                <h5>Raigad Fort</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="Images/idex_image/gallary_2.avif"
+                                alt="Sinhagad Fort">
+                            <div class="overlay">
+                                <h5>Sinhagad Fort</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="Images/idex_image/gallary_3.jpg"
+                                alt="Pratapgad Fort">
+                            <div class="overlay">
+                                <h5>Pratapgad Fort</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="Images/idex_image/gallary_4.jpg"
+                                alt="Torana Fort">
+                            <div class="overlay">
+                                <h5>Torana Fort</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="Images/idex_image/gallary_5.jpg"
+                                alt="Lohagad Fort">
+                            <div class="overlay">
+                                <h5>Lohagad Fort</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="Images/idex_image/gallary_6.jpg"
+                                alt="Rajmachi Fort">
+                            <div class="overlay">
+                                <h5>Rajmachi Fort</h5>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Button Section -->
+                <div class="text-center mt-5">
+                    <a href="gallary.html" class="btn-view-gallery">View Full
+                        Gallary</a>
+                </div>
             </div>
         </section>
 
-        <!-- Gallary section -->
-         <section class="fort-gallery py-5">
-  <div class="container">
-    <h2 class="gallery-title text-center mb-3">Fort Gallery</h2>
-    <p class="gallery-subtitle text-center mb-5">Experience the Glory of Maharashtra's Iconic Forts</p>
-    
-    <div class="row g-4">
-      <!-- Gallery Item 1 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="gallery-item">
-          <a href="Images/idex_image/hero_index_about_4.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-            <img src="Images/idex_image/hero_index_about_4.jpg" class="img-fluid" alt="Raigad Fort">
-            <div class="gallery-caption">Raigad Fort</div>
-          </a>
-        </div>
-      </div>
-      
-      <!-- Gallery Item 2 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="gallery-item">
-          <a href="Images/idex_image/home_fort3.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-            <img src="Images/idex_image/home_fort3.jpg" class="img-fluid" alt="Suvarndurg Fort">
-            <div class="gallery-caption">Suvarndurg Fort</div>
-          </a>
-        </div>
-      </div>
-      
-      <!-- Gallery Item 3 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="gallery-item">
-          <a href="Images/idex_image/hero_index_about_7.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-            <img src="Images/idex_image/hero_index_about_7.jpg" class="img-fluid" alt="Torna Fort">
-            <div class="gallery-caption">Torna Fort</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <!-- gallary section end -->
 
-<!-- Lightbox Modal -->
-<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-transparent border-0">
-      <img id="lightboxImg" src="" class="img-fluid rounded" alt="">
-    </div>
-  </div>
-</div>
+        <!-- Features section start -->
 
+        <section id="features" class="features-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="features-title">Why Visit Maharashtra Forts?</h2>
+                    <p class="features-subtitle">Experience the glory, strength,
+                        and heritage of the Maratha Empire.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-box text-center">
+                            <div class="icon">
+                                <i class="bi bi-shield-shaded"></i>
+                            </div>
+                            <h5>Historic Valor</h5>
+                            <p>Witness the bravery and legacy of the Maratha
+                                Empire preserved in these forts.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-box text-center">
+                            <div class="icon">
+                                <i class="bi bi-bank"></i>
+                            </div>
+                            <h5>Architectural Grandeur</h5>
+                            <p>Marvel at the majestic gates, bastions, and
+                                intricate designs of ancient forts.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-box text-center">
+                            <div class="icon">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <h5>Scenic Beauty</h5>
+                            <p>Enjoy breathtaking views of Sahyadri ranges,
+                                valleys, and coastal landscapes.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-box text-center">
+                            <div class="icon">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <h5>Cultural Heritage</h5>
+                            <p>Learn about legends, traditions, and stories that
+                                shaped Maharashtra’s history.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features section end -->
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
