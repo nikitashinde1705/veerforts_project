@@ -1,3 +1,73 @@
+/*navbar start */
+.navbar{
+    background: linear-gradient(to bottom , rgb(27, 112, 27), #153121) ;
+    
+
+    color: white;
+}
+
+/* logo name */
+.navbar-brand {
+  font-family: 'Cinzel Decorative', serif; 
+  font-size: 30px;                          
+  font-weight: 700;
+  color: #D4AF37 !important;                
+  letter-spacing: 2px;                     
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+
+.navbar-brand:hover {
+  color: #ff9d00 !important;                
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+
+
+
+
+/* Navbar links default */
+.navbar .nav-link {
+  color: #F5F5DC !important; 
+  font-weight: 500;
+  margin-left: 12px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover text color */
+.navbar .nav-link:hover {
+  color: #FFD700 !important; 
+}
+
+/* Underline effect */
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;  
+  width: 0;
+  height: 2px;
+  background-color: #FFD700;
+  transition: width 0.3s ease;
+}
+
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+
+/*navbar end */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* stops horizontal scroll */
+}
+
 /* Contact Header */
 .contact-header {
   background: #e8d5b7;
