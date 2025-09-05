@@ -736,16 +736,16 @@ a {
 }
 
 /* footer design */
-/* Footer styling */
+
 .footer {
-  background: linear-gradient(to right, #14532d, #064e3b); /* dark green blend */
+  background: linear-gradient(to right, #14532d, #064e3b); 
   color: #F5F5DC;
   padding: 40px 0 20px;
   margin-top: 50px;
 }
 
 .footer h5 {
-  color: #D4AF37; /* golden headings */
+  color: #D4AF37;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 18px;
@@ -762,10 +762,10 @@ a {
 }
 
 .footer a:hover {
-  color: #FFD700; /* gold hover */
+  color: #FFD700; 
 }
 
-/* Quick Links list */
+
 .footer-links {
   list-style: none;
   padding: 0;
