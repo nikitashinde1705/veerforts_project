@@ -6,6 +6,12 @@
   color: white;
 }
 
+
+html,body{
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
 /* logo name */
 .navbar-brand {
   font-family: 'Cinzel Decorative', serif;
@@ -140,22 +146,343 @@
 h3{
   color: brown;
 }
-.raigad{
-  /* border: 2px solid black; */
-}
-.raigadimg:hover{
-  border: 2px solid black;
-  box-sizing: border-box;
-  box-shadow: 4px 4px 4px orange;
-  border-radius: 40px;
-  /* transform: scale(0.5); */
-}
-.raigadimg{
-  /* transition: transform 0.5s ease-in-out; */
-}
+
 
 button {
   border: none;
   outline: none; 
   background: none;
 }
+
+
+
+/* Centered button below image */
+/* .map-btn {
+  display: inline-block;          
+  margin: 12px auto 0;            
+  padding: 12px 24px;
+  background-color: brown;
+  color: #fff;
+  text-decoration: none;         
+  border: 0;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+} */
+/* .map-btn:hover {
+  background-color: green;
+  color: #fff;
+  transform: translateY(-1px);
+} */
+
+/* @media (max-width: 576px) {
+  .map-btn {
+    width: 80%;
+    max-width: 260px;
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+} */
+
+
+
+/*  */
+#purandar{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+/* Apply transition to the whole purandar section */
+#purandar {
+    background: #f9f9f9;
+    padding: 20px;
+    transition: transform 0.8s ease, background 0.8s ease;
+    
+
+}
+
+/* Hover effect for section */
+#purandar:hover {
+    transform: scale(1.02);
+    background: #f1f1f1;
+}
+
+/* Image animation */
+#purandar img {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border: 2px solid black;
+}
+
+/* Hover effect for image */
+#purandar img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+.purandarimg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* button */
+.map-btn {
+    display: inline-block;
+    margin: 10px;
+    padding:  15px;
+    font-size: 16px;
+    color: white;
+    background: brown;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.map-btn:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transform: translateY(3px);
+    color: white;
+}
+.map-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+#purandar{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+/* Apply transition to the whole shivneri section */
+#shivneri {
+    background: #f9f9f9;
+    padding: 20px;
+    transition: transform 0.8s ease, background 0.8s ease;
+}
+
+/* Hover effect for section */
+#shivneri:hover {
+    transform: scale(1.02);
+    background: #f1f1f1;
+}
+
+/* Image animation */
+#shivneri img {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border: 2px solid black;
+}
+
+/* Hover effect for image */
+#shivneri img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+.shivneriimg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Apply transition to the whole sinhagad section */
+#sinhagad{
+    background: #f9f9f9;
+    padding: 20px;
+    transition: transform 0.8s ease, background 0.8s ease;
+}
+
+/* Hover effect for section */
+#sinhagad:hover {
+    transform: scale(1.02);
+    background: #f1f1f1;
+}
+
+/* Image animation */
+#sinhagad img {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border: 2px solid black;
+}
+
+/* Hover effect for image */
+#sinhagad img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+.sinhagadimg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Apply transition to the whole  tikona section */
+#tikona {
+    background: #f9f9f9;
+    padding: 20px;
+    transition: transform 0.8s ease, background 0.8s ease;
+}
+
+/* Hover effect for section */
+#tikona:hover {
+    transform: scale(1.02);
+    background: #f1f1f1;
+}
+
+/* Image animation */
+#tikona img {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border: 2px solid black;
+}
+
+/* Hover effect for image */
+#tikona img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+.tikonaimg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* Apply transition to the whole harishchandragad section */
+#harishchandragad {
+    background: #f9f9f9;
+    padding: 20px;
+    transition: transform 0.8s ease, background 0.8s ease;
+}
+
+/* Hover effect for section */
+#harishchandragad:hover {
+    transform: scale(1.02);
+    background: #f1f1f1;
+}
+
+/* Image animation */
+#harishchandragad img {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border: 2px solid black;
+}
+
+/* Hover effect for image */
+#harishchandragad img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+.harishchandragadimg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Apply transition to the whole korigad section */
+#korigad {
+    background: #f9f9f9;
+    padding: 20px;
+    transition: transform 0.8s ease, background 0.8s ease;
+}
+
+/* Hover effect for section */
+#korigad:hover {
+    transform: scale(1.02);
+    background: #f1f1f1;
+}
+
+/* Image animation */
+#korigad img {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border: 2px solid black;
+}
+
+/* Hover effect for image */
+#korigad img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+.korigadimg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Apply transition to the whole panhala section */
+#panhala {
+    background: #f9f9f9;
+    padding: 20px;
+    transition: transform 0.8s ease, background 0.8s ease;
+}
+
+/* Hover effect for section */
+#panhala:hover {
+    transform: scale(1.02);
+    background: #f1f1f1;
+}
+
+/* Image animation */
+#panhala img {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border: 2px solid black;
+}
+
+/* Hover effect for image */
+#panhala img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+.panhalaimg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+/* text animation */
+
