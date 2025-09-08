@@ -181,7 +181,7 @@ button {
     height: 350px;
     border-radius: 12px;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
-    border: 2px solid black;
+      border: 3px solid #d4af37;
 }
 
 /* Hover effect for image */
@@ -249,7 +249,7 @@ button {
     height: 350px;
     border-radius: 12px;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
-    border: 2px solid black;
+     border: 3px solid #d4af37;
 }
 
 /* Hover effect for image */
@@ -283,7 +283,7 @@ button {
     height: 350px;
     border-radius: 12px;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
-    border: 2px solid black;
+      border: 3px solid #d4af37;
 }
 
 /* Hover effect for image */
@@ -319,7 +319,7 @@ button {
     height: 350px;
     border-radius: 12px;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
-    border: 2px solid black;
+      border: 3px solid #d4af37;
 }
 
 /* Hover effect for image */
@@ -356,7 +356,7 @@ button {
     height: 350px;
     border-radius: 12px;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
-    border: 2px solid black;
+     border: 3px solid #d4af37;
 }
 
 /* Hover effect for image */
@@ -392,7 +392,7 @@ button {
     height: 350px;
     border-radius: 12px;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
-    border: 2px solid black;
+      border: 3px solid #d4af37;
 }
 
 /* Hover effect for image */
@@ -428,7 +428,7 @@ button {
     height: 350px;
     border-radius: 12px;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
-    border: 2px solid black;
+      border: 3px solid #d4af37;
 }
 
 /* Hover effect for image */
@@ -448,4 +448,10 @@ button {
 
 
 /* text animation */
+
+
+.text h3{ 
+ font-weight: 600;
+    font-size: 35px;
+}
 
