@@ -101,7 +101,7 @@
     
 }
 
-
+/* images change */
 .historyborder img {
   border: 4px solid green;
   padding: 2px;
@@ -134,8 +134,74 @@ table thead {
   text-align: center;
   font-weight: 800;
 }
+.sea {
+  text-align: center;
+  color: brown;
+}
+.suvarnadurg img{
+  height: 300px;
+}
+
+/* images change end */
+
+/* know more btn start */
+/* Fort Cards */
+.fort-card {
+  border: none;
+  transition: all 0.4s ease;
+  background: #fff;
+}
+
+.fort-card img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 4px solid #14532d;
+}
+
+.fort-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.text-brown {
+  color: #6b4226;
+}
+
+/* know more btn end */
 
 
+/* modal start */
+/* Custom Modal Styling */
+.custom-modal {
+  border-radius: 20px;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease;
+  background: linear-gradient(135deg, #e6ffe6, #f5f5dc);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-modal:hover {
+  transform: scale(1.02);
+}
+
+.text-brown {
+  color: #8B4513;
+}
+
+/* Modal animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* modal end */
 
 
 
@@ -193,4 +259,266 @@ table thead {
   .footer .col-md-4 {
     margin-bottom: 20px;
   }
+}
+
+
+/* table start */
+/* Table Container */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Table Styling */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  min-width: 600px; /* ensures proper layout on larger screens */
+}
+
+.custom-table th {
+  background: green;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.custom-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.custom-table tr:hover {
+  background: #f2f2f2;
+  transition: 0.3s;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+/* table end */
+
+
+/* seaimg */
+.seaimg{
+  /* border-radius: 10px;
+  height: 300px;
+  border: 2px solid brown;
+  transition: all 0.6s ease;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+  transform: scale(0.05); */
+}
+.seaimg:hover{
+  /* transform: scale(0.5) ; */
+  /* box-shadow: 0 12px 25px  black; */
+  
+}
+
+/* ===== Image Styling ===== */
+.custom-img {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
+}
+
+.custom-img:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Add floating animation */
+.seaimg {
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ===== Title Styling ===== */
+.custom-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.custom-title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #e67e22;
+  margin-top: 6px;
+  border-radius: 5px;
+  animation: expandLine 2s ease forwards;
+}
+
+@keyframes expandLine {
+  from { width: 0; opacity: 0; }
+  to { width: 50%; opacity: 1; }
+}
+
+/* ===== Subtitle Styling ===== */
+.custom-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #16a085;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+
+/* ===== Paragraph Styling ===== */
+.custom-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+   padding-left: 30px;
+  padding-right: 30px;
+  color: #555;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+/* Fade-in text automatically when container loads */
+.row .custom-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Container Styling ===== */
+.container-fluid {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+
+
+
+
+/* seaimg */
+
+
+/* scrolling start */
+@property --background-color {
+	syntax: "<color>";
+	inherits: true;
+	/* initial-value: #120020; */
+}
+
+body {
+	background: var(--background-color);
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.scroller-container {
+	--slide-width: clamp(150px, 20vw, 300px);
+	--slide-gap: calc(var(--slide-width) * 0.06);
+	--slide-border-radius: calc(var(--slide-width) * 0.06);
+
+	overflow: hidden;
+	width: 90vw;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: var(--slide-width);
+		left: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+
+		background: linear-gradient(90deg, var(--background-color), transparent);
+	}
+	&::after {
+		position: absolute;
+		content: "";
+		width: var(--slide-width);
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+
+		background: linear-gradient(90deg, transparent, var(--background-color));
+	}
+}
+
+.scroller-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	gap: var(--slide-gap);
+	width: calc((var(--slide-width) + var(--slide-gap)) * 6);
+
+	animation: moveLeft 15s linear infinite;
+}
+
+.scroller-slide {
+
+	flex: none;
+	width: 300px;      /* fixed width */
+	height: 300px;     /* fixed height */
+	background: #eee;
+	border-radius: 15px; /* keep it rounded, adjust as needed */
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.scroller-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+
+@keyframes moveLeft {
+	from {
+		transform: translatex(0);
+	}
+	to {
+		transform: translatex(-100%);
+	}
+}
+
+/* scrolling end */
+.close{
+  /* color: green; */
+  background-color: green;
+}
+
+.close:hover{
+  background-color:green;
+  color: white;
 }
