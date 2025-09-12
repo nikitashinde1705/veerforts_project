@@ -1,15 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* stops horizontal scroll */
+}
+
 /*navbar start */
 .navbar {
   background: linear-gradient(to bottom, rgb(27, 112, 27), #153121);
 
 
   color: white;
-}
-
-
-html,body{
-  overflow-x: hidden;
-  /* overflow-y: hidden; */
 }
 
 /* logo name */
@@ -67,6 +75,11 @@ html,body{
 }
 
 /*navbar end */
+
+
+
+
+
 
 /* slidebar */
 .carousel-item img {
@@ -153,38 +166,6 @@ button {
   outline: none; 
   background: none;
 }
-
-
-
-/* Centered button below image */
-/* .map-btn {
-  display: inline-block;          
-  margin: 12px auto 0;            
-  padding: 12px 24px;
-  background-color: brown;
-  color: #fff;
-  text-decoration: none;         
-  border: 0;
-  border-radius: 6px;
-  font-size: 16px;
-  line-height: 1;
-  cursor: pointer;
-  transition: background-color 0.25s ease, transform 0.15s ease;
-} */
-/* .map-btn:hover {
-  background-color: green;
-  color: #fff;
-  transform: translateY(-1px);
-} */
-
-/* @media (max-width: 576px) {
-  .map-btn {
-    width: 80%;
-    max-width: 260px;
-    font-size: 15px;
-    padding: 10px 18px;
-  }
-} */
 
 
 
@@ -494,8 +475,6 @@ button {
 
 
 
-/* footer design */
-
 .footer {
   background: linear-gradient(to right, #14532d, #064e3b); 
   color: #F5F5DC;
@@ -549,5 +528,3 @@ button {
     margin-bottom: 20px;
   }
 }
-
-

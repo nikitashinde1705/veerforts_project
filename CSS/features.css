@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* stops horizontal scroll */
+}
+
 /*navbar start */
 .navbar {
   background: linear-gradient(to bottom, rgb(27, 112, 27), #153121);
@@ -62,206 +76,6 @@
 
 /*navbar end */
 
-/* slidebar */
-.carousel-item img{
-    height: 500px;
-    width: 100%;
-}
-
-/* Slider Title */
-
-
-.carousel-item h2{
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: #D4AF37;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* Slider Subtitle */
-.carousel-item p {
-  font-family: 'Cinzel', serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.8); 
-}
-
-
-
-
-
-.marque{
-    padding: 2px;
-    margin: 8px;
-    background-color:yellowgreen;
-    
-}
-
-/* images change */
-.historyborder img {
-  border: 4px solid green;
-  padding: 2px;
-  margin: 2px;
-  height: 200px;
-}
-.historyborder:hover {
-}
-h3 {
-  text-align: center;
-}
-
-.harishchandragad h2,
-h5 {
-  color: brown;
-}
-.harishchandragad img {
-  border: 2px solid black;
-  padding: 2px;
-}
-.harishchandragad img:hover {
-  border-radius: 15px;
-  box-shadow: 4px 4px 4px goldenrod;
-}
-.history {
-  text-align: center;
-  color: brown;
-}
-table thead {
-  text-align: center;
-  font-weight: 800;
-}
-.sea {
-  text-align: center;
-  color: brown;
-}
-.suvarnadurg img{
-  height: 300px;
-}
-
-/* images change end */
-
-/* know more btn start */
-/* Fort Cards */
-.fort-card {
-  border: none;
-  transition: all 0.4s ease;
-  background: #fff;
-}
-
-.fort-card img {
-  height: 220px;
-  object-fit: cover;
-  border-bottom: 4px solid #14532d;
-}
-
-.fort-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-.text-brown {
-  color: #6b4226;
-}
-
-/* know more btn end */
-
-
-/* modal start */
-/* Custom Modal Styling */
-.custom-modal {
-  border-radius: 20px;
-  overflow: hidden;
-  animation: fadeInUp 0.6s ease;
-  background: linear-gradient(135deg, #e6ffe6, #f5f5dc);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.custom-modal:hover {
-  transform: scale(1.02);
-}
-
-.text-brown {
-  color: #8B4513;
-}
-
-/* Modal animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* modal end */
-
-
-
-/* footer design */
-
-.footer {
-  background: linear-gradient(to right, #14532d, #064e3b); 
-  color: #F5F5DC;
-  padding: 40px 0 20px;
-  margin-top: 50px;
-}
-
-.footer h5 {
-  color: #D4AF37;
-  margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.footer p, .footer a {
-  font-size: 14px;
-  color: #F5F5DC;
-}
-
-.footer a {
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  color: #FFD700; 
-}
-
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 10px;
-}
-
-/* Divider */
-.footer-line {
-  border-color: rgba(255, 255, 255, 0.2);
-  margin: 20px 0;
-}
-
-/* Responsive */
-@media (max-width: 767px) {
-  .footer {
-    text-align: center;
-  }
-  .footer .col-md-4 {
-    margin-bottom: 20px;
-  }
-}
-
-
 /* table start */
 /* Table Container */
 .table-responsive {
@@ -315,38 +129,25 @@ table thead {
     padding: 8px;
   }
 }
-/* table end */
 
-
-/* seaimg */
-.seaimg{
-  /* border-radius: 10px;
-  height: 300px;
-  border: 2px solid brown;
-  transition: all 0.6s ease;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
-  transform: scale(0.05); */
-}
-.seaimg:hover{
-  /* transform: scale(0.5) ; */
-  /* box-shadow: 0 12px 25px  black; */
-  
-}
-
-/* ===== Image Styling ===== */
-.custom-img {
+/* Custom Modal Styling */
+.custom-modal {
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
-  cursor: pointer;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease;
+  background: linear-gradient(135deg, #e6ffe6, #f5f5dc);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
-.custom-img:hover {
-  transform: scale(1.08) rotate(2deg);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+.custom-modal:hover {
+  transform: scale(1.02);
 }
 
-/* Add floating animation */
+.text-brown {
+  color: #8B4513;
+}
+/* table end */
 .seaimg {
   animation: float 5s infinite ease-in-out;
 }
@@ -383,47 +184,41 @@ table thead {
   to { width: 50%; opacity: 1; }
 }
 
-/* ===== Subtitle Styling ===== */
-.custom-subtitle {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #16a085;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 20px;
+
+/* know more btn start */
+/* Fort Cards */
+.fort-card {
+  border: none;
+  transition: all 0.4s ease;
+  background: #fff;
 }
 
-/* ===== Paragraph Styling ===== */
-.custom-text {
-  font-size: 1.05rem;
-  line-height: 1.7;
-   padding-left: 30px;
-  padding-right: 30px;
-  color: #555;
-  text-align: justify;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 1s ease;
+.fort-card img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 4px solid #14532d;
 }
 
-/* Fade-in text automatically when container loads */
-.row .custom-text {
-  opacity: 1;
-  transform: translateY(0);
+.fort-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* ===== Container Styling ===== */
-.container-fluid {
-  background: linear-gradient(135deg, #fdfbfb, #ebedee);
-  padding: 40px;
-  border-radius: 20px;
+.text-brown {
+  color: #6b4226;
+}
+.close{
+  /* color: green; */
+  background-color: green;
 }
 
+.close:hover{
+  background-color:green;
+  color: white;
+}
+/* know more btn end */
 
 
-
-
-/* seaimg */
 
 
 /* scrolling start */
@@ -431,14 +226,6 @@ table thead {
 	syntax: "<color>";
 	inherits: true;
 	/* initial-value: #120020; */
-}
-
-body {
-	background: var(--background-color);
-	display: grid;
-	place-items: center;
-	min-height: 100vh;
-	margin: 0;
 }
 
 .scroller-container {
@@ -513,12 +300,60 @@ body {
 }
 
 /* scrolling end */
-.close{
-  /* color: green; */
-  background-color: green;
+
+
+/* footer design */
+
+.footer {
+  background: linear-gradient(to right, #14532d, #064e3b); 
+  color: #F5F5DC;
+  padding: 40px 0 20px;
+  margin-top: 50px;
 }
 
-.close:hover{
-  background-color:green;
-  color: white;
+.footer h5 {
+  color: #D4AF37;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer p, .footer a {
+  font-size: 14px;
+  color: #F5F5DC;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #FFD700; 
+}
+
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+/* Divider */
+.footer-line {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
 }
