@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* stops horizontal scroll */
+}
+
 /*navbar start */
 .navbar {
   background: linear-gradient(to bottom, rgb(27, 112, 27), #153121);
@@ -62,81 +76,230 @@
 
 /*navbar end */
 
-/* slidebar */
-.carousel-item img{
-    height: 500px;
-    width: 100%;
+/* table start */
+/* Table Container */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Slider Title */
+/* Table Styling */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  min-width: 600px; /* ensures proper layout on larger screens */
+}
 
+.custom-table th {
+  background: green;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
 
-.carousel-item h2{
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 36px;
+.custom-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.custom-table tr:hover {
+  background: #f2f2f2;
+  transition: 0.3s;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* Custom Modal Styling */
+.custom-modal {
+  border-radius: 20px;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease;
+  background: linear-gradient(135deg, #e6ffe6, #f5f5dc);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-modal:hover {
+  transform: scale(1.02);
+}
+
+.text-brown {
+  color: #8B4513;
+}
+/* table end */
+.seaimg {
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ===== Title Styling ===== */
+.custom-title {
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #D4AF37;
-  margin-bottom: 10px;
+  color: #2c3e50;
   text-transform: uppercase;
   letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
 }
 
-/* Slider Subtitle */
-.carousel-item p {
-  font-family: 'Cinzel', serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.8); 
+.custom-title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #e67e22;
+  margin-top: 6px;
+  border-radius: 5px;
+  animation: expandLine 2s ease forwards;
 }
 
-
-
-
-
-.marque{
-    padding: 2px;
-    margin: 8px;
-    background-color:yellowgreen;
-    
-}
-
-
-.historyborder img {
-  border: 4px solid green;
-  padding: 2px;
-  margin: 2px;
-  height: 200px;
-}
-.historyborder:hover {
-}
-h3 {
-  text-align: center;
-}
-
-.harishchandragad h2,
-h5 {
-  color: brown;
-}
-.harishchandragad img {
-  border: 2px solid black;
-  padding: 2px;
-}
-.harishchandragad img:hover {
-  border-radius: 15px;
-  box-shadow: 4px 4px 4px goldenrod;
-}
-.history {
-  text-align: center;
-  color: brown;
-}
-table thead {
-  text-align: center;
-  font-weight: 800;
+@keyframes expandLine {
+  from { width: 0; opacity: 0; }
+  to { width: 50%; opacity: 1; }
 }
 
 
+/* know more btn start */
+/* Fort Cards */
+.fort-card {
+  border: none;
+  transition: all 0.4s ease;
+  background: #fff;
+}
 
+.fort-card img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 4px solid #14532d;
+}
+
+.fort-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.text-brown {
+  color: #6b4226;
+}
+.close{
+  /* color: green; */
+  background-color: green;
+}
+
+.close:hover{
+  background-color:green;
+  color: white;
+}
+/* know more btn end */
+
+
+
+
+/* scrolling start */
+@property --background-color {
+	syntax: "<color>";
+	inherits: true;
+	/* initial-value: #120020; */
+}
+
+.scroller-container {
+	--slide-width: clamp(150px, 20vw, 300px);
+	--slide-gap: calc(var(--slide-width) * 0.06);
+	--slide-border-radius: calc(var(--slide-width) * 0.06);
+
+	overflow: hidden;
+	width: 90vw;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: var(--slide-width);
+		left: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+
+		background: linear-gradient(90deg, var(--background-color), transparent);
+	}
+	&::after {
+		position: absolute;
+		content: "";
+		width: var(--slide-width);
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+
+		background: linear-gradient(90deg, transparent, var(--background-color));
+	}
+}
+
+.scroller-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	gap: var(--slide-gap);
+	width: calc((var(--slide-width) + var(--slide-gap)) * 6);
+
+	animation: moveLeft 15s linear infinite;
+}
+
+.scroller-slide {
+
+	flex: none;
+	width: 300px;      /* fixed width */
+	height: 300px;     /* fixed height */
+	background: #eee;
+	border-radius: 15px; /* keep it rounded, adjust as needed */
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.scroller-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+
+@keyframes moveLeft {
+	from {
+		transform: translatex(0);
+	}
+	to {
+		transform: translatex(-100%);
+	}
+}
+
+/* scrolling end */
 
 
 /* footer design */
