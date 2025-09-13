@@ -74,13 +74,19 @@ body {
   width: 100%;
 }
 
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+
+}
+
 /*navbar end */
 
-
-
-
-
-
+/* heading  */
+ .text h3{ 
+ font-weight: 600;
+    font-size: 35px;
+} 
+/* heading end */
 /* slidebar */
 .carousel-item img {
   height: 500px;
@@ -107,12 +113,6 @@ body {
   color: #ffffff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
-.button {
-    display: flex;                  
-    flex-wrap: wrap;                
-    justify-content: center;        
-    padding: 20px;                
-}
 
 /* marque */
 .marque{
@@ -121,8 +121,17 @@ body {
     background-color:yellowgreen;
     
 }
+/* marque end */
 
 
+
+/* buttins style   */
+.button {
+    display: flex;                  
+    flex-wrap: wrap;                
+    justify-content: center;        
+    padding: 10px;                
+}
 .btn {
     display: inline-block;          
     padding: 10px 20px;             
@@ -182,9 +191,7 @@ button {
 #purandar {
     background: #f9f9f9;
     padding: 20px;
-    transition: transform 0.8s ease, background 0.8s ease;
-    
-
+    transition: transform 0.2s ease;
 }
 
 /* Hover effect for section */
@@ -207,16 +214,21 @@ button {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 }
-.purandarimg {
+/* .purandarimg {
   width: 100%;
   height: auto;
   border-radius: 12px;
   transition: all 0.3s ease;
-}
+} */
 
+/* #purandar{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+} */
 
-
-/* button */
+/* location button for images  */
 .map-btn {
     display: inline-block;
     margin: 10px;
@@ -234,25 +246,18 @@ button {
     transform: translateY(3px);
     color: white;
 }
-.map-btn:active {
+/* .map-btn:active {
     transform: translateY(1px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
+} */
 
-
-#purandar{
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
+/* location button end here for images */
 
 /* Apply transition to the whole shivneri section */
 #shivneri {
     background: #f9f9f9;
     padding: 20px;
-    transition: transform 0.8s ease, background 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 /* Hover effect for section */
@@ -275,18 +280,18 @@ button {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 }
-.shivneriimg {
+/* .shivneriimg {
   width: 100%;
   height: auto;
   border-radius: 12px;
   transition: all 0.3s ease;
-}
+} */
 
 /* Apply transition to the whole sinhagad section */
 #sinhagad{
     background: #f9f9f9;
     padding: 20px;
-    transition: transform 0.8s ease, background 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 /* Hover effect for section */
@@ -309,12 +314,12 @@ button {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 }
-.sinhagadimg {
+/* .sinhagadimg {
   width: 100%;
   height: auto;
   border-radius: 12px;
   transition: all 0.3s ease;
-}
+} */
 
 
 
@@ -322,7 +327,7 @@ button {
 #tikona {
     background: #f9f9f9;
     padding: 20px;
-    transition: transform 0.8s ease, background 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 /* Hover effect for section */
@@ -345,21 +350,18 @@ button {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 }
-.tikonaimg {
+/* .tikonaimg {
   width: 100%;
   height: auto;
   border-radius: 12px;
   transition: all 0.3s ease;
-}
-
-
-
+} */
 
 /* Apply transition to the whole harishchandragad section */
 #harishchandragad {
     background: #f9f9f9;
     padding: 20px;
-    transition: transform 0.8s ease, background 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 /* Hover effect for section */
@@ -382,20 +384,17 @@ button {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 }
-.harishchandragadimg {
+/* .harishchandragadimg {
   width: 100%;
   height: auto;
   border-radius: 12px;
   transition: all 0.3s ease;
-}
-
-
-
+} */
 /* Apply transition to the whole korigad section */
 #korigad {
     background: #f9f9f9;
     padding: 20px;
-    transition: transform 0.8s ease, background 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 /* Hover effect for section */
@@ -418,20 +417,20 @@ button {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 }
-.korigadimg {
+/* .korigadimg {
   width: 100%;
   height: auto;
   border-radius: 12px;
   transition: all 0.3s ease;
 }
-
+ */
 
 
 /* Apply transition to the whole panhala section */
 #panhala {
     background: #f9f9f9;
     padding: 20px;
-    transition: transform 0.8s ease, background 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 /* Hover effect for section */
@@ -454,24 +453,14 @@ button {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 }
-.panhalaimg {
+/* .panhalaimg {
   width: 100%;
   height: auto;
   border-radius: 12px;
   transition: all 0.3s ease;
-}
-
-
-
-
-
+} */
 /* text animation */
 
-
-.text h3{ 
- font-weight: 600;
-    font-size: 35px;
-}
 
 
 
