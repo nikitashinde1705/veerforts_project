@@ -1,15 +1,17 @@
+/*navbar start */
 .navbar {
-  background: linear-gradient(to bottom, #153121);
+  background: linear-gradient(to bottom, rgb(27, 112, 27), #153121);
+
 
   color: white;
 }
 
 /* logo name */
 .navbar-brand {
-  font-family: "Cinzel Decorative", serif;
+  font-family: 'Cinzel Decorative', serif;
   font-size: 30px;
   font-weight: 700;
-  color: #d4af37 !important;
+  color: #D4AF37 !important;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);

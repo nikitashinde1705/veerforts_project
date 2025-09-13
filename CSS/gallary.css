@@ -2,9 +2,12 @@
 .navbar {
   background: linear-gradient(to bottom, rgb(27, 112, 27), #153121);
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 8c61dd7fb403dccb8b1c193e61d83a744f6cf788
 
   color: white;
   position: fixed;
@@ -33,6 +36,10 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c61dd7fb403dccb8b1c193e61d83a744f6cf788
 /* Navbar links default */
 .navbar .nav-link {
   color: #F5F5DC !important;
@@ -59,6 +66,10 @@
   transition: width 0.3s ease;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c61dd7fb403dccb8b1c193e61d83a744f6cf788
 .navbar .nav-link:hover::after {
   width: 100%;
 }
@@ -69,6 +80,7 @@
 
 /*navbar end */
 
+<<<<<<< HEAD
 /* footer design */
 
 .footer {
@@ -120,4 +132,10 @@ img:hover {
   background-color: #b8860b !important;
   box-shadow: #b8860b;
   border: 4px solid #b8860b;
+=======
+img:hover{
+    color: darkred;
+    box-shadow: brown;
+    border: 5px solid deeppink;
+>>>>>>> 8c61dd7fb403dccb8b1c193e61d83a744f6cf788
 }
