@@ -87,14 +87,22 @@ body {
 
 /*navbar end */
 
+
+body {
+  padding-top: 70px; 
+}
+
+
 .heading{
   font-family: "Merriweather", serif;
   color: #2E4D34;
   border: 2px solid #d4af37;
+  margin: 30px;
 }
 .heading1{
    font-family: "Merriweather", serif;
    color: #2E4D34;
+   margin: 30px;
 
 }
 
@@ -178,6 +186,9 @@ body {
 
 .sea-heading {
   color: #8B4513; 
+}
+.sea1{
+  margin-top: 30px;
 }
 
 /* Responsive Adjustments */
@@ -487,7 +498,7 @@ body {
   display: flex;
   gap: var(--slide-gap);
   width: max-content;
-  animation: moveLeft 5s linear infinite;
+  animation: moveLeft 20s linear infinite;
 }
 .scroller{
   height: 300px;
@@ -526,7 +537,7 @@ body {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
