@@ -14,12 +14,16 @@ body {
   /* stops horizontal scroll */
 }
 
+
 /*navbar start */
 .navbar {
   background: linear-gradient(to bottom, rgb(27, 112, 27), #153121);
-
-
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
 }
 
 /* logo name */
@@ -80,6 +84,7 @@ body {
   filter: brightness(0) invert(1);
 
 }
+
 /*navbar end */
 
 .heading{
@@ -316,52 +321,11 @@ body {
   }
 }
 
-/* Custom Modal Styling */
-/* .custom-modal {
-  border-radius: 20px;
-  overflow: hidden;
-  animation: fadeInUp 0.6s ease;
-  background: linear-gradient(135deg, #e6ffe6, #f5f5dc);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-} */
-
-/* .custom-modal:hover {
-  transform: scale(1.02);
-} */
-
 .text-brown {
   color: #8B4513;
 }
 /* table end */
 
-
-/* @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-} */
-
-/* ===== Title Styling ===== */
-/* .custom-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #2c3e50;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
-  display: inline-block;
-} */
-
-/* .custom-title::after {
-  content: "";
-  display: block;
-  width: 50%;
-  height: 3px;
-  background: #e67e22;
-  margin-top: 6px;
-  border-radius: 5px;
-  animation: expandLine 2s ease forwards;
-}
 
 @keyframes expandLine {
   from { width: 0; opacity: 0; }
