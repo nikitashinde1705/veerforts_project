@@ -224,9 +224,12 @@ body {
   /* transform: translateY(-5px); */
 }
 
-/* Smooth Fade-In Animation */
-.custom-text {
-  /* animation: fadeIn 2s ease-in; */
+.custom-subtitle{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color:brown;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @keyframes fadeIn {
@@ -253,8 +256,8 @@ body {
 /* table start */
 .history{
   text-align: center;
-  color: brown;
-
+  color: #2E4D34;
+  
 }
 /* Table Container */
 .table-responsive {
@@ -310,18 +313,18 @@ body {
 }
 
 /* Custom Modal Styling */
-.custom-modal {
+/* .custom-modal {
   border-radius: 20px;
   overflow: hidden;
   animation: fadeInUp 0.6s ease;
   background: linear-gradient(135deg, #e6ffe6, #f5f5dc);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
-}
+} */
 
-.custom-modal:hover {
+/* .custom-modal:hover {
   transform: scale(1.02);
-}
+} */
 
 .text-brown {
   color: #8B4513;
@@ -329,13 +332,13 @@ body {
 /* table end */
 
 
-@keyframes float {
+/* @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
-}
+} */
 
 /* ===== Title Styling ===== */
-.custom-title {
+/* .custom-title {
   font-size: 2.2rem;
   font-weight: 700;
   color: #2c3e50;
@@ -343,9 +346,9 @@ body {
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
-}
+} */
 
-.custom-title::after {
+/* .custom-title::after {
   content: "";
   display: block;
   width: 50%;
@@ -359,7 +362,7 @@ body {
 @keyframes expandLine {
   from { width: 0; opacity: 0; }
   to { width: 50%; opacity: 1; }
-}
+} */
 
 
 /* know more btn start */
@@ -455,9 +458,6 @@ body {
 }
 
 /* accordian end */
-
-
-
 
 
 /* scrolling start */
