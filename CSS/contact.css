@@ -67,6 +67,10 @@ body{
 .navbar .nav-link.active::after {
   width: 100%;
 }
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+
+}
 
 /*navbar end */
 
