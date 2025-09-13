@@ -1,9 +1,13 @@
+
 /*navbar start */
 .navbar {
   background: linear-gradient(to bottom, rgb(27, 112, 27), #153121);
-
-
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
 }
 
 /* logo name */
@@ -22,14 +26,54 @@
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
+
+
+
+/* Navbar links default */
 .navbar .nav-link {
-  color: #f5f5dc !important;
+  color: #F5F5DC !important;
   font-weight: 500;
+  margin-left: 12px;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
+/* Hover text color */
+.navbar .nav-link:hover {
+  color: #FFD700 !important;
+}
+
+/* Underline effect */
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #FFD700;
+  transition: width 0.3s ease;
+}
+
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+
+}
+
+/*navbar end */
 .linear{
             height: 100px;
             background: linear-gradient(orange,orange,orange);
+            margin-top: 70px;
          }
         
         .heading{
@@ -46,3 +90,62 @@
         h3{
             color: orange;
         }
+
+        
+/* footer design */
+
+.footer {
+  background: linear-gradient(to right, #14532d, #064e3b);
+  color: #F5F5DC;
+  padding: 40px 0 20px;
+
+}
+
+.footer h5 {
+  color: #D4AF37;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+  color: #F5F5DC;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #FFD700;
+}
+
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+/* Divider */
+.footer-line {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
