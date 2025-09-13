@@ -14,12 +14,16 @@ body {
   /* stops horizontal scroll */
 }
 
+
 /*navbar start */
 .navbar {
   background: linear-gradient(to bottom, rgb(27, 112, 27), #153121);
-
-
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
 }
 
 /* logo name */
@@ -80,6 +84,7 @@ body {
   filter: brightness(0) invert(1);
 
 }
+
 /*navbar end */
 
 .heading{
