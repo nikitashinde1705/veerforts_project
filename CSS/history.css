@@ -1,9 +1,13 @@
 /*navbar start */
 .navbar {
   background: linear-gradient(to bottom, rgb(27, 112, 27), #153121);
-
-
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  
 }
 
 /* logo name */
@@ -60,6 +64,11 @@
   width: 100%;
 }
 
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+
+}
+
 /*navbar end */
 /* slidebar */
 .carousel-item img {
@@ -91,7 +100,8 @@
     display: flex;                  
     flex-wrap: wrap;                
     justify-content: center;        
-    padding: 20px;                
+    padding: 20px;   
+    margin-top: 20px;             
 }
 .btn{
     display: inline-block;
@@ -128,6 +138,64 @@ h2{
   font-size: 60px;
 }
 
+
+/* footer design */
+
+.footer {
+  background: linear-gradient(to right, #14532d, #064e3b);
+  color: #F5F5DC;
+  padding: 40px 0 20px;
+
+}
+
+.footer h5 {
+  color: #D4AF37;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+  color: #F5F5DC;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #FFD700;
+}
+
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+/* Divider */
+.footer-line {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
 
 
 
